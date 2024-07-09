@@ -189,33 +189,7 @@ button:hover span {
     height: 100%;
     width: 50%;
 }
-footer{
-    background-color: rgb(219, 195, 195);
-    text-align: center;
-    border-radius: 10px;
-    padding: 0 10px 0 10px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 5px;
-}
-footer a{
-    color: #eb6e4b;
-    opacity: 100%;
-    fill-opacity: 100%;
-}
-footer p{
-    opacity: 70%;
-}
-footer span{
-    color: red;
-    opacity: 100%;
-    text-decoration: underline;
-    padding-right: 3px;
-}
+
 .popup {
     display: none;
     position: fixed;
@@ -240,14 +214,14 @@ footer span{
   }
 .close-button {
     color: red;
-    opacity: 60%;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: all 0.5s;
   }
 .close-button:hover,
 .close-button:focus {
-    color: red;
+    color: rgb(24, 3, 255);
     opacity: 100%;
     text-decoration: none;
     cursor: pointer;
@@ -313,14 +287,6 @@ transition: width 0.5s ease;
     
     .firsthalf, .secondhalf {
         width: 100%;
-    }
-    
-    footer {
-        width: 70%;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        bottom: 2%;
     }
     
     .popup-content {

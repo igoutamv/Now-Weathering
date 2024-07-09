@@ -11,12 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="website icon"  type="png" href="logo.png">
-    <title>Weather Now - igoutamv</title>
+    <title>Now Weathering</title>
 </head>
 <body>
+<!--Navigation Bar-->
     <div class="top-center">
         <div id="part1">
-            <h2><span>Igoutamv</span></h2>
+            <h2><span>igoutamv</span></h2>
         </div>
         <div id="part2">
             <ul>
@@ -27,9 +28,9 @@
         </div>
 
     </div>
-    
+<!--Main Container-->
     <div class="center-page">
-        <h4>Weather Web App</h4>
+        <h4>Realtime Weather</h4>
             <div class="input">
                 <input type="text" name="City" class="inputValue" placeholder="Enter City">
                 
@@ -37,7 +38,6 @@
                     <span>Search</span>
                 </button>
             </div>
-        
         <div class="displayWeather">
             <div class="firsthalf">
                 <h3 class="temp">Temperature→</h3>
@@ -50,6 +50,7 @@
             </div>   
         </div>
     </div>
+<!--Popup Dilog box-->
     <div id="popup" class="popup">
         <div class="popup-content">
           <span class="close-button" onclick="closePopup()">Retry</span>
@@ -57,10 +58,6 @@
           </p>
         </div>
       </div>
-      
-    <footer>
-        ⚠️Note:<p> This is a web application that fetches weather status using </p> <a href="https://openweathermap.org/" target="_blank" rel="OpenWeather"> OpenWeather's API </a> 
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

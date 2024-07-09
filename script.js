@@ -32,9 +32,8 @@ const displayData=(weather)=>{
     temp.innerText=`Temperature→ ${weather.main.temp}°C`
     desc.innerText=`Status→ ${weather.weather[0].main}`
     wind.innerText=`Wind→ ${weather.wind.speed} m/s`
-    humidity.innerText=`humidity→ ${weather.main.humidity} %`
+    humidity.innerText=`Humidity→ ${weather.main.humidity} %`
     geo.innerText=`Coordinates→ ${weather.coord.lon.toFixed(2)} , ${weather.coord.lat.toFixed(2)}`
-    console.log(weather);
 }
 
 //Thanks - Igoutamv
