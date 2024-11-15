@@ -46,7 +46,21 @@ html {
   color: red;
   font-weight: 900;
   padding-right: 5px;
+  animation: flask 2s infinite ease-in-out;
 }
+@keyframes flask {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 #part2 ul {
   list-style: none;
   display: flex;
@@ -176,11 +190,9 @@ button:hover span {
   0% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(0.9);
   }
-
   100% {
     transform: scale(1);
   }
@@ -287,7 +299,7 @@ button:hover span {
     left: 50%;
   }
   .input {
-    width: 100%;
+    width: 70%;
     height: 40px;
   }
   .inputValue {
@@ -298,21 +310,20 @@ button:hover span {
   }
   .close-button::after {
     display: none;
-}
+  }
   .close-button:hover::after {
     display: none;
-}
+  }
   .displayWeather {
     flex-direction: column;
     align-items: center;
   }
-
   .firsthalf,
   .secondhalf {
     width: 100%;
   }
-
   .popup-content {
+    transition: all 1s ease-in-out;
     width: 80%;
     margin: 20% auto;
   }
